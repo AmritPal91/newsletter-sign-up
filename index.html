@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+  <div class="container">
+    <img class="main-img-mob" src="assets/images/illustration-sign-up-mobile.svg" alt="mob-pic">
+    <img class="main-img-desktop" src="assets/images/illustration-sign-up-desktop.svg" alt="desktop-pic">
+    <main>
+      <h1>Stay updated!</h1>
+
+      <p class="sec-heading">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="list">
+        <li>
+          <img class="list-icon" src="assets/images/icon-list.svg" alt="list-item">
+          <p>Product discovery and building what matters</p>
+        </li>
+        </p>
+        <li><img class="list-icon" src="assets/images/icon-list.svg" alt="list-item">
+          <p>Measuring to ensure updates are a success</p>
+        </li>
+        <li><img class="list-icon" src="assets/images/icon-list.svg" alt="list-item">
+          <p>And much more!</p>
+        </li>
+      </ul>
+      <form action="success_msg.htm" onsubmit="storeData()" method="post">
+        <label><strong>Email address</strong></label><br>
+        <input id="email" type="email" placeholder="email@company.com" required> <br>
+
+        <input id="submit_button" type="submit" value="Subscribe to monthly newsletter"></input>
+      </form>
+    </main>
+  </div>
+  <!-- Sign-up form end -->
+
+<!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Amritpal Singh</a>.
+  </div> -->
+  <script src="index.js">
+  </script>
+</body>
+
+</html>

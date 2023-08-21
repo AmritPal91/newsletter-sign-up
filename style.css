@@ -1,0 +1,204 @@
+* {
+    box-sizing: borderbox;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+.main-img-mob {
+    display: flex;
+    max-width: 425px;
+}
+
+.main-img-desktop {
+    display: none;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 30px 30px 30px 30px;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.sec-heading {
+    margin: 17px 0;
+}
+
+.list {
+    margin: 18px 0px;
+    list-style-type: none;
+}
+
+.list li p {
+    line-height: 1.5;
+    vertical-align: 5px;
+    font-size: 16px;
+    margin: 0 0 15px 35px;
+}
+
+.list-icon {
+    float: left;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0 0;
+}
+
+form strong {
+    font-size: 12px;
+    margin-top: -30px;
+}
+
+input {
+    border-radius: 6px;
+    border-style: groove;
+    border-color: #dcd9d9;
+    border-width: 1px;
+    height: 50px;
+    opacity: 0.7;
+    padding-left: 25px;
+}
+
+/* Thanks Section  */
+.container_thanks {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+}
+
+#success_msg {
+    /*     margin: 120px 0 35px; */
+    padding: 0 24px;
+}
+
+#success_msg img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+#success_msg h1 {
+    margin: 20px 0;
+}
+
+#success_msg p {
+    line-height: 1.5;
+}
+
+#success_msg button {
+    margin-top: 280px;
+    width: 100%;
+    font-size: 16px;
+}
+
+#success_msg button:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 5px 5px 25px -4px hsl(4, 100%, 67%);
+    border-style: none;
+}
+
+button,
+#submit_button {
+    background-color: hsl(235deg 90.95% 5.37%);
+    color: hsl(0, 0%, 100%);
+    height: 50px;
+    border-radius: 6px;
+    border-style: none;
+    font-size: 16px;
+}
+
+
+
+
+
+@media screen and (min-width: 1280px)and (max-width: 1440px) {
+
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        /*         display: grid;
+        place-items: center; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(0, 0%, 0%, 0.65);
+
+    }
+
+    .container {
+        background: white;
+        border-radius: 25px;
+        height: 520px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    main {
+        width: 47%;
+    }
+
+    .main-img-mob {
+        display: none;
+    }
+
+    .main-img-desktop {
+        display: block;
+        height: 90%;
+        order: 1;
+    }
+
+
+    /*     Thanks section */
+
+    #success_msg {
+        width: 415px;
+        height: 460px;
+        background-color: white;
+        border: solid 1px black;
+        border-radius: 35px;
+        margin: 0;
+        padding: 25px 45px 25px 45px;
+    }
+
+    #success_msg img {
+        width: 60px;
+        margin: 30px 0 0px;
+    }
+
+    #success_msg h1 {
+        font-size: 50px;
+        line-height: 1.1;
+        margin: 30px 0;
+    }
+
+    #success_msg p {
+        font-size: 18px;
+    }
+
+    #success_msg button {
+        margin-top: 40px;
+
+    }
+}
