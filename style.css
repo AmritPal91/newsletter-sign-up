@@ -7,7 +7,8 @@
 
 .main-img-mob {
     display: flex;
-    max-width: 425px;
+    max-width: 100%;
+    min-width: 320px;
 }
 
 .main-img-desktop {
@@ -123,11 +124,7 @@ button,
     font-size: 16px;
 }
 
-
-
-
-
-@media screen and (min-width: 1280px)and (max-width: 1440px) {
+@media screen and (min-width: 1024px)and (max-width: 1440px) {
 
 
     body {
